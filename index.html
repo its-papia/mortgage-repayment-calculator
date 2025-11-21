@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" class="style">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form_box">
+      <div class="form_head">
+        <h1>Mortgage Calculator</h1>
+        <a>Clear All</a>
+      </div>
+      <form>
+        <div class="mortgage_amount">
+          <label for="Mamount">Mortgage Amount</label>
+          <div class="input_wrap prefix">
+            <span class="input_prefix">€</span>
+            <input type="number" name="mortgage_amount" />
+          </div>
+          
+        </div>
+        
+        <div class="mterm_rate">
+          <div class="mortgage_term">
+            <label for="Mterm">Mortgage Term</label>
+            <div class="input_wrap suffix">
+              <input type="number" name="mortgage_term" />
+              <span class="input_suffix">years</span>
+            </div>
+
+          </div>
+          <div class="mortgage_rate">
+            <label for="Mrate">Mortgage Rate</label>
+            <div class="input_wrap suffix">
+              <input type="number" name="mortgage_rate" />
+              <span class="input_suffix">%</span>
+            </div>
+          </div>
+        </div>
+          <div class="mtype">
+            <label>Mortgage Type</label> <br>
+            <div class="mtype_box">
+              <input type="radio" id="repayment" name="repayment" value="Repayment">
+              <label for="repayment" id="label_font">Repayment</label><br>
+            </div>
+            <div class="mtype_box">
+              <input type="radio" id="interest" name="repayment" value="Interest Only">
+              <label for="interest" id="label_bold_font">Interest Only</label>
+            </div>
+            
+          </div>
+
+          <div class="form_submit">
+            <button type="submit"><i class='bx bxs-calculator'></i> Calculate Repayments</button>
+          </div>
+      </form>
+    </div>
+
+    <div class="empty_result">
+      <img src="./assets/images/illustration-empty.svg" alt="Illustration of empty_result" />
+      <h2>Results shown here</h2>
+      <p>Complete the form and click “calculate repayments” to see what 
+        your monthly repayments would be.</p>
+    </div>
+
+  </div>
+
+  
+
+  <!-- Empty results start 
+
+  Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be.
+
+   Empty results end 
+
+   Completed results start
+
+  Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term
+
+  Completed results end 
+-->
+  
+</body>
+</html>
